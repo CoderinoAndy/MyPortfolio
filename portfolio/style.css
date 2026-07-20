@@ -174,7 +174,8 @@ p {
     background-color: #121212;
     border: 1px solid #484848;
     border-radius: 22px 0 0 22px;
-    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05)
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    padding-left: 20px;
 }
 .search-bar::placeholder{
     font-family: "Roboto", Arial, sans-serif;
@@ -198,6 +199,70 @@ p {
     column-gap: 16px;
     row-gap: 40px;
     padding: 20px;
+}
+
+.intro-banner {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 440px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: #242424;
+    border-radius: 16px;
+}
+
+.intro-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 0;
+    overflow: hidden;
+    background-color: #315b7d;
+}
+
+.intro-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px;
+}
+
+.intro-copy h2 {
+    margin: 0 0 6px;
+    font-size: 48px;
+}
+
+.intro-copy h3 {
+    margin: 0;
+    color: #9a9a9a;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.intro-copy p {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+@media (max-width: 700px) {
+    .intro-banner {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .intro-photo {
+        min-height: 280px;
+    }
+
+    .intro-copy {
+        padding: 40px 28px;
+    }
+
+    .intro-copy h2 {
+        font-size: 36px;
+    }
 }
 
 @media (min-width: 870px) and (max-width: 1124px) {
