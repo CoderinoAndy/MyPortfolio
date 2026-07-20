@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page 1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="dropdown.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger" src="icons/hamburger-menu.svg">
+                <span class="logo-wordmark">YuTube!</span>
+            </div>
+            <div class="middle-section">
+                <div class="search-menu">
+                    <input class="search-bar" type="text" placeholder="What would you like to know?" aria-label="Open video menu">
+                    <button class="search-button tooltip-container" aria-label="Open video menu">
+                        <img class="search-icon" src="icons/search.svg">
+                        <div class="tooltip">Videos</div>
+                    </button>
+                    <div class="search-dropdown">
+                        <a href="aboutme.html">Option 1</a>
+                        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">Option 2</a>
+                        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">Option 3</a>
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">Option 4</a>
+                        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">Option 5</a>
+                        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">Option 6</a>
+                        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">Option 7</a>
+                        <a href="https://www.youtube.com/watch?v=lFm4EM1juls">Option 8</a>
+                        <a id="noresults">No results found! I'm not that advanced yet...</a>
+                    </div>
+                </div>
+                <button class="voice-search-button tooltip-container" aria-label="Search with your voice">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="tooltip-container">
+                    <img class="right-icon" src="icons/upload.svg" alt="Create">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="tooltip-container">
+                    <img class="right-icon" src="icons/youtube-apps.svg" alt="YouTube apps">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+                <div class="tooltip-container">
+                    <img class="right-icon" src="icons/notifications.svg" alt="Notifications">
+                    <div class="notification-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="user-profile" src="profiles/channel-user.jpeg" alt="User profile">
+            </div>
+        </div>
+        <div class="sidebar">
+            <button class="home-button">
+                <img class="home-icon" src="icons/home.svg">
+                <p class="sidebartext">Home</p>
+            </button>
+            <button class="explore-button">
+                <img class="explore-icon" src="icons/explore.svg">
+                <p class="sidebartext">Explore</p>
+            </button>
+            <button class="subscriptions-button">
+                <img class="subscriptions-icon" src="icons/subscriptions.svg">
+                <p class="sidebartext">Subscriptions</p>
+            </button>
+            <button class="originals-button">
+                <img class="originals-icon" src="icons/originals.svg">
+                <p class="sidebartext">Originals</p>
+            </button>
+            <button class="music-button">
+                <img class="music-icon" src="icons/youtube-music.svg">
+                <p class="sidebartext">Youtube Music</p>
+            </button>
+            <button class="library-button">
+                <img class="library-icon" src="icons/library.svg">
+                <p class="sidebartext">Library</p>
+            </button>
+        </div>
+        <div class="video-grid">
+            <a class="video-link" href="aboutme.html">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">A Little About Me</p>
+                            <p class="video-author">INTRODUCTION &middot; ANDY YU</p>
+                            <p class="video-stats">Student, developer, solver</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">8:22</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Project 1: Campus Event Finder</p>
+                        <p class="video-author">FEATURED PROJECT &middot; WEB APP</p>
+                        <p class="video-stats">React, Node.js &middot; Full-stack case study</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Project 2: Personal Finance Dashboard</p>
+                        <p class="video-author">FEATURED PROJECT &middot; DATA VISUALIZATION</p>
+                        <p class="video-stats">JavaScript, APIs &middot; Built for clarity</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">22:09</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">My R&eacute;sum&eacute;: Education &amp; Experience</p>
+                        <p class="video-author">R&Eacute;SUM&Eacute; &middot; ANDY YU</p>
+                        <p class="video-stats">Experience, education &middot; Download PDF</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">11:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Skills &amp; Technologies I Use</p>
+                        <p class="video-author">TECH STACK &middot; DEVELOPMENT</p>
+                        <p class="video-stats">Java, Python, JavaScript &middot; And more</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">19:59</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Project 3: Study Planner Mobile App</p>
+                        <p class="video-author">MOBILE PROJECT &middot; PRODUCTIVITY</p>
+                        <p class="video-stats">UI/UX, prototyping &middot; Student focused</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">10:13</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">How I Design and Build a Project</p>
+                        <p class="video-author">MY PROCESS &middot; BEHIND THE SCENES</p>
+                        <p class="video-stats">Research, design, code &middot; Start to finish</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a class="video-link" href="https://www.youtube.com/watch?v=lFm4EM1juls">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
+                    <div class="video-time">7:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Internship &amp; Work Experience</p>
+                        <p class="video-author">EXPERIENCE &middot; CAREER JOURNEY</p>
+                        <p class="video-stats">Teamwork, impact &middot; Lessons learned</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </body>
+</html>
