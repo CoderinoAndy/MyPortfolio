@@ -217,14 +217,20 @@ p {
     align-items: flex-end;
     min-width: 0;
     overflow: hidden;
-    background-color: #315b7d;
+}
+
+.intro-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 67.67%;
 }
 
 .intro-copy {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 64px;
+    padding: 44px 64px 84px;
 }
 
 .intro-copy h2 {
@@ -233,17 +239,22 @@ p {
 }
 
 .intro-copy h3 {
-    margin: 0;
+    margin: 0 0 20px;
     color: #9a9a9a;
     font-size: 20px;
     font-weight: 400;
 }
 
 .intro-copy p {
-    max-width: 590px;
+    max-width: 855px;
     font-size: 18px;
     line-height: 1.6;
     color: #d0d0d0;
+}
+
+.intro-copy a,
+.intro-copy a:visited {
+    color: #ff9f43;
 }
 
 @media (max-width: 700px) {
@@ -253,7 +264,7 @@ p {
     }
 
     .intro-photo {
-        min-height: 280px;
+        height: 280px;
     }
 
     .intro-copy {
@@ -356,7 +367,7 @@ p {
     line-height: 20px;
     letter-spacing: 0.2px;
     white-space: nowrap;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
 .search-button{
