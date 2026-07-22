@@ -16,7 +16,7 @@ body {
     color: white;
     background-color: #181818;
     padding-top: 77px;
-    padding-left: 72px;
+    padding-left: 84px;
 }
 
 p {
@@ -50,7 +50,7 @@ p {
     align-items: center;
     flex: 1;
     min-width: 0;
-    max-width: 500px;
+    max-width: 680px;
     margin-left: 70px;
     margin-right: 35px;
 }
@@ -65,14 +65,14 @@ p {
 .search-dropdown {
     display: none;
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 12px;
-    right: 0;
+    right: 60px;
     overflow: hidden;
     background-color: #121212;
     border: 1px solid #484848;
-    border-top: none;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
+    padding: 8px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
@@ -406,7 +406,7 @@ p {
     top: 57px;
     bottom: 0;
     left: 0;
-    width: 72px;
+    width: 84px;
     padding-top: 4px;
     display: flex;
     flex-direction: column;
