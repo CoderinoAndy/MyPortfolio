@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="js/dropdown.js" defer></script>
+        <script src="js/icon-inversion.js" defer></script>
+        <script src="js/voicetotext.js" defer></script>
     </head>
     <body>
         <div class="header">
@@ -17,24 +19,24 @@
             </div>
             <div class="middle-section">
                 <div class="search-menu">
-                    <input class="search-bar" type="text" placeholder="Search my Portfolio!" aria-label="Open video menu">
+                    <input class="search-bar" type="text" placeholder="What would you like to know?" aria-label="Open video menu">
                     <button class="search-button tooltip-container" aria-label="Open video menu">
                         <img class="search-icon" src="icons/search.svg">
                         <div class="tooltip">Videos</div>
                     </button>
                     <div class="search-dropdown">
-                        <a href="aboutme.html">Option 1</a>
+                        <a href="contact-me.html">Option 1</a>
                         <a href="project-1.html">Option 2</a>
                         <a href="project-2.html">Option 3</a>
                         <a href="resume.html">Option 4</a>
-                        <a href="skills.html">Option 5</a>
+                        <a href="my-music.html">Option 5</a>
                         <a href="project-3.html">Option 6</a>
                         <a href="process.html">Option 7</a>
                         <a href="experience.html">Option 8</a>
                         <p id="noresults">No results found! I'm not that advanced yet...</p>
                     </div>
                 </div>
-                <button class="voice-search-button tooltip-container" aria-label="Search with your voice">
+                <button class="voice-search-button tooltip-container" type="button" aria-label="Search with your voice" aria-pressed="false">
                     <img class="voice-search-icon" src="icons/voice-search-icon.svg">
                     <div class="tooltip">Search with your voice</div>
                 </button>
@@ -57,30 +59,26 @@
             </div>
         </div>
         <div class="sidebar">
-            <button type="button" onclick="location.href='home.html'">
-                <img src="icons/home.svg">
+            <a href="home.html">
+                <img class="sidebar-icon" src="icons/home.svg">
                 <p>Home</p>
-            </button>
-            <button type="button" onclick="location.href='explore.html'">
-                <img src="icons/explore.svg">
+            </a>
+            <a href="explore.html">
+                <img class="sidebar-icon" src="icons/explore.svg">
                 <p>Explore</p>
-            </button>
-            <button>
-                <img src="icons/subscriptions.svg">
-                <p>Subscriptions</p>
-            </button>
-            <button>
-                <img src="icons/originals.svg">
-                <p>Originals</p>
-            </button>
-            <button>
-                <img src="icons/youtube-music.svg">
-                <p>Youtube Music</p>
-            </button>
-            <button>
-                <img src="icons/library.svg">
-                <p>Library</p>
-            </button>
+            </a>
+            <a href="contact-me.html">
+                <img class="sidebar-icon" src="icons/subscriptions.svg">
+                <p>Contact Me</p>
+            </a>
+            <a href="my-music.html">
+                <img class="sidebar-icon" src="icons/youtube-music.svg">
+                <p>My Music</p>
+            </a>
+            <a href="resume.html">
+                <img class="sidebar-icon" src="icons/library.svg">
+                <p>R&eacute;sum&eacute;</p>
+            </a>
         </div>
         <div class="video-grid">
             <a class="video-link" href="aboutme.html">
@@ -155,7 +153,7 @@
                 </div>
             </div>
             </a>
-            <a class="video-link" href="skills.html">
+            <a class="video-link" href="my-music.html">
             <div>
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
@@ -166,7 +164,7 @@
                         <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
                     </div>
                     <div>
-                        <p class="video-title">Skills &amp; Technologies I Use</p>
+                        <p class="video-title">My Music</p>
                         <p class="video-author">TECH STACK &middot; DEVELOPMENT</p>
                         <p class="video-stats">Java, Python, JavaScript &middot; And more</p>
                     </div>

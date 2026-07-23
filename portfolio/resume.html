@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="js/dropdown.js" defer></script>
+        <script src="js/icon-inversion.js" defer></script>
+        <script src="js/voicetotext.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -24,18 +26,18 @@
                         <span class="tooltip">Videos</span>
                     </button>
                     <div class="search-dropdown">
-                        <a href="aboutme.html">Option 1</a>
+                        <a href="contact-me.html">Option 1</a>
                         <a href="project-1.html">Option 2</a>
                         <a href="project-2.html">Option 3</a>
                         <a href="resume.html">Option 4</a>
-                        <a href="skills.html">Option 5</a>
+                        <a href="my-music.html">Option 5</a>
                         <a href="project-3.html">Option 6</a>
                         <a href="process.html">Option 7</a>
                         <a href="experience.html">Option 8</a>
                         <p id="noresults">No results found! I'm not that advanced yet...</p>
                     </div>
                 </div>
-                <button class="voice-search-button tooltip-container" aria-label="Search with your voice">
+                <button class="voice-search-button tooltip-container" type="button" aria-label="Search with your voice" aria-pressed="false">
                     <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
                     <span class="tooltip">Search with your voice</span>
                 </button>
@@ -48,12 +50,11 @@
             </div>
         </header>
         <aside class="sidebar">
-            <button type="button" onclick="location.href='home.html'"><img src="icons/home.svg" alt=""><p>Home</p></button>
-            <button type="button" onclick="location.href='explore.html'"><img src="icons/explore.svg" alt=""><p>Explore</p></button>
-            <button><img src="icons/subscriptions.svg" alt=""><p>Subscriptions</p></button>
-            <button><img src="icons/originals.svg" alt=""><p>Originals</p></button>
-            <button><img src="icons/youtube-music.svg" alt=""><p>Youtube Music</p></button>
-            <button><img src="icons/library.svg" alt=""><p>Library</p></button>
+            <a href="home.html"><img class="sidebar-icon" src="icons/home.svg" alt=""><p>Home</p></a>
+            <a href="explore.html"><img class="sidebar-icon" src="icons/explore.svg" alt=""><p>Explore</p></a>
+            <a href="contact-me.html"><img class="sidebar-icon" src="icons/subscriptions.svg" alt=""><p>Contact Me</p></a>
+            <a href="my-music.html"><img class="sidebar-icon" src="icons/youtube-music.svg" alt=""><p>My Music</p></a>
+            <a href="resume.html"><img class="sidebar-icon" src="icons/library.svg" alt=""><p>R&eacute;sum&eacute;</p></a>
         </aside>
         <main aria-label="Resume"></main>
     </body>
