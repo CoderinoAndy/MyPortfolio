@@ -7,9 +7,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="dropdown.js" defer></script>
+        <script src="js/dropdown.js" defer></script>
     </head>
-    <body>
+    <body class="home-page">
         <div class="header">
             <div class="left-section">
                 <img class="hamburger" src="icons/hamburger-menu.svg">
@@ -57,195 +57,70 @@
             </div>
         </div>
         <div class="sidebar">
-            <button class="home-button">
-                <img class="home-icon" src="icons/home.svg">
-                <p class="sidebartext">Home</p>
+            <button type="button" onclick="location.href='home.html'">
+                <img src="icons/home.svg">
+                <p>Home</p>
             </button>
-            <button class="explore-button">
-                <img class="explore-icon" src="icons/explore.svg">
-                <p class="sidebartext">Explore</p>
+            <button type="button" onclick="location.href='explore.html'">
+                <img src="icons/explore.svg">
+                <p>Explore</p>
             </button>
-            <button class="subscriptions-button">
-                <img class="subscriptions-icon" src="icons/subscriptions.svg">
-                <p class="sidebartext">Subscriptions</p>
+            <button>
+                <img src="icons/subscriptions.svg">
+                <p>Subscriptions</p>
             </button>
-            <button class="originals-button">
-                <img class="originals-icon" src="icons/originals.svg">
-                <p class="sidebartext">Originals</p>
+            <button>
+                <img src="icons/originals.svg">
+                <p>Originals</p>
             </button>
-            <button class="music-button">
-                <img class="music-icon" src="icons/youtube-music.svg">
-                <p class="sidebartext">Youtube Music</p>
+            <button>
+                <img src="icons/youtube-music.svg">
+                <p>Youtube Music</p>
             </button>
-            <button class="library-button">
-                <img class="library-icon" src="icons/library.svg">
-                <p class="sidebartext">Library</p>
+            <button>
+                <img src="icons/library.svg">
+                <p>Library</p>
             </button>
         </div>
-        <section class="intro-banner">
-            <div class="intro-photo">
-                <img src="images/me.png" alt="Andy Yu outdoors">
-            </div>
-            <div class="intro-copy">
-                <h2>Hi, I'm Andy Yu!</h2>
-                <h3>Student, Developer</h3>
-                <p>I am currently a grade 12 student at Dr. G.W. Williams Secondary School in Aurora, Ontario. I aspire to pursue computational chemistry and computer science, having
-                     recently begun coding and developing projects (see below). I'm most proficient in python and java; I am continuing to learn C++, JavaScript/Typescript and frameworks like FastAPI.
-                <p>
-                    <br>
-                    In my free time, I love to ski/ski instruct, play basketball, and study piano/music harmony. You can learn more about me <a href="aboutme.html">here</a>.
-                </p>
-                <p>
-                    <br>
-                    I encourage you to click around my portfolio!
-                </p>
-            </div>
-        </section>
-        <div class="video-grid">
-            <a class="video-link" href="aboutme.html">
-                <div class="video-preview">
-                    <div class="thumbnail-row">
-                        <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                        <div class="video-time">14:20</div>
-                    </div>
-                    <div class="video-info-grid">
-                        <div class="channel-picture">
-                            <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                        </div>
-                        <div class="video-info">
-                            <p class="video-title">A Little About Me</p>
-                            <p class="video-author">INTRODUCTION &middot; ANDY YU</p>
-                            <p class="video-stats">Student, developer, solver</p>
-                        </div>
-                    </div>
+        <main class="home-content">
+            <section class="intro-banner">
+                <div class="intro-photo">
+                    <img src="images/me.png" alt="Andy Yu outdoors">
                 </div>
-            </a>
-            <a class="video-link" href="project-1.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">8:22</div>
+                <div class="intro-copy">
+                    <h2>Hi, I'm Andy Yu!</h2>
+                    <h3>Student, Developer</h3>
+                    <p>I am currently a grade 12 student at Dr. G.W. Williams Secondary School in Aurora, Ontario. I aspire to pursue computational chemistry and computer science, having recently begun coding and developing projects (see below). I'm most proficient in python and java; I am continuing to learn C++, JavaScript/Typescript and frameworks like FastAPI.</p>
+                    <p>In my free time, I love to ski/ski instruct, play basketball, and study piano/music harmony. You can learn more about me <a href="aboutme.html">here</a>.</p>
+                    <p>
+                        Feel free to click around my portfolio! I began coding and developing it on July 15th, so features may not be as fleshed out or developed as I would like them to be.
+                    </p>
                 </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Project 1: Campus Event Finder</p>
-                        <p class="video-author">FEATURED PROJECT &middot; WEB APP</p>
-                        <p class="video-stats">React, Node.js &middot; Full-stack case study</p>
-                    </div>
+            </section>
+            <section class="cat-game-section">
+                <div class="game-copy">
+                    <h2>Sample Game</h2>
+                    <p>I didn't know what to do with this part of the portfolio so I used AI to code me a nice filler game as an iteration of Google's famous Dino Game. Although I am not 
+                        interested in game development, I hope it provides a bit of entertainment for you! I plan to replace this with data
+                    </p>
+                    <p>
+                        <br>
+                        As you can see, I'm a cat person! You can use arrow keys (up/down) or W/A to jump and crouch respectively.
+                    </p>
                 </div>
-            </div>
-            </a>
-            <a class="video-link" href="project-2.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">9:13</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
+                <div class="game-shell">
+                    <div class="game-stats" aria-live="polite"><span>Score <strong id="game-score">00000</strong></span><span>Best <strong id="game-best">00000</strong></span></div>
+                    <canvas id="cat-game" width="1080" height="320" aria-label="Cat runner game"></canvas>
+                    <div id="game-message" class="game-message">
+                        <img id="game-panel-label" class="game-panel-label hidden" src="game-assets/dino/game-over.png" alt="">
+                        <button id="game-action-button" class="game-action-button" type="button" aria-label="Play game">
+                            <img id="game-action-icon" src="game-assets/dino/play.png" alt="">
+                        </button>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Project 2: Personal Finance Dashboard</p>
-                        <p class="video-author">FEATURED PROJECT &middot; DATA VISUALIZATION</p>
-                        <p class="video-stats">JavaScript, APIs &middot; Built for clarity</p>
-                    </div>
+                    <div class="game-controls"><button id="jump-button" type="button">Jump</button><button id="duck-button" type="button">Crouch</button></div>
                 </div>
-            </div>
-            </a>
-            <a class="video-link" href="resume.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">22:09</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">My R&eacute;sum&eacute;: Education &amp; Experience</p>
-                        <p class="video-author">R&Eacute;SUM&Eacute; &middot; ANDY YU</p>
-                        <p class="video-stats">Experience, education &middot; Download PDF</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-            <a class="video-link" href="skills.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">11:17</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Skills &amp; Technologies I Use</p>
-                        <p class="video-author">TECH STACK &middot; DEVELOPMENT</p>
-                        <p class="video-stats">Java, Python, JavaScript &middot; And more</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-            <a class="video-link" href="project-3.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">19:59</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Project 3: Study Planner Mobile App</p>
-                        <p class="video-author">MOBILE PROJECT &middot; PRODUCTIVITY</p>
-                        <p class="video-stats">UI/UX, prototyping &middot; Student focused</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-            <a class="video-link" href="process.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">10:13</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">How I Design and Build a Project</p>
-                        <p class="video-author">MY PROCESS &middot; BEHIND THE SCENES</p>
-                        <p class="video-stats">Research, design, code &middot; Start to finish</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-            <a class="video-link" href="experience.html">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-placeholder.svg" alt="Neutral video thumbnail">
-                    <div class="video-time">7:12</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profilepic" src="profiles/channel-placeholder.svg" alt="Neutral channel profile">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Internship &amp; Work Experience</p>
-                        <p class="video-author">EXPERIENCE &middot; CAREER JOURNEY</p>
-                        <p class="video-stats">Teamwork, impact &middot; Lessons learned</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-        </div>
+            </section>
+        </main>
+        <script src="js/cat-game.js"></script>
     </body>
 </html>
